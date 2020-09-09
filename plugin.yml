@@ -1,0 +1,16 @@
+name: NoBedStrats
+author: Voxelloge
+version: 1.0.0
+
+main: voxelloge.bed.NoBedStrats
+api-version: 1.16
+prefix: NoBedStrats
+
+commands:
+  reloadbedconfig:
+    description: Reload plugin settings from config.yml
+    usage: 'Usage: /<command>'
+    permission: nobedstrats.reload
+permissions:
+  nobedstrats.reload:
+    description: Allow access to the /reloadbedconfig command
