@@ -61,8 +61,8 @@ public class NoBedStrats extends JavaPlugin implements Listener {
 
 	@Override
 	public void onDisable() {
-		for (Player player : Bukkit.getOnlinePlayers())
-			player.removeMetadata(META_KEY, this);
+		// I don't want to have to remove potential metadata from every entity in every dimension
+		this.disabled = true;
 	}
 
 	@EventHandler
